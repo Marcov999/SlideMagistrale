@@ -1,1 +1,7 @@
-Ottimizzare main e mstyle.
+Nell'ordine:
+- in def.tex: motivazione, risultati noti e definizioni;
+- in teo.tex: enunciato del teorema principale, esempi e schema della dimostrazione;
+- in dim.tex: lemmi tecnici (alcuni con dimostrazione) e dimostrazione del teorema principale, ``Grazie per l'attenzione!'', bibliografia principale
+
+Poi:
+- scrivere `Screenplay (sort of)'

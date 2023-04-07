@@ -1,0 +1,86 @@
+\begin{frame}[t]
+  \frametitle{Domini strettamente pseudoconvessi e metrica di Kobayashi}
+  \only<1-2>{
+  Sia $\mathbb{D}$ il disco unitario in $\mathbb{C}$. Su $\mathbb{D}$ possiamo mettere la distanza iperbolica $\omega$, indotta dalla metrica di Poincaré $\frac{|\diff z|}{1-|z|^2}$, che lo rende uno spazio iperbolico. \\
+
+  }
+  \only<2>{
+  \,
+
+  Setting: fissiamo $\Omega \subseteq \mathbb{C}^n, n \ge 2$ un dominio limitato con bordo $C^2$, cioè esiste $\rho \in C^2(\mathbb{C}^n)$ tale che $\Omega=\{\rho(z)<0\}$ e $\diff\rho\not=0$ in ogni punto di $\partial\Omega$.
+  Come $\rho$ si può prendere $-\delta(x)$ per $x \in \Omega$ e $\delta(x)$ per $x \in \mathbb{C}^n\setminus\Omega$, dove $\delta(x)=\text{dist}(x,\partial\Omega)$.}
+  \only<3-4>{
+      \begin{defn}
+        Dato $p \in \partial\Omega$, lo \textit{spazio tangente complesso} a $\partial\Omega$ in $p$ è $H_p\partial\Omega=\{Z \in \mathbb{C}^n \mid \langle \bar{\partial}\rho(p),Z\rangle=0\}$. Diciamo che $\Omega$ è \textit{strettamente pseudoconvesso} se la \textit{forma di Levi}
+      $$L_{\rho}(p;Z)=\sum_{\nu,\mu=1}^n \frac{\partial^2\rho}{\partial z_\nu\partial\bar{z}_\mu}(p)Z_\nu\bar{Z}_\mu, \quad Z=(Z_1,\dots,Z_n) \in \mathbb{C}^n$$
+      è definita positiva in $H_p\partial\Omega$ per ogni $p \in \partial\Omega$.
+
+      \only<4>{La distanza indotta su $\partial\Omega$ è la \textit{distanza di Carnot-Carathéodory}
+      \begin{gather*}
+        d_H(p,q)=\inf\left\{\int_0^1L_{\rho}\big(\alpha(t);\dot{\alpha}(t)\big)^{1/2}\diff t \mid \alpha \text{ curva orizzontale tra $p$ e $q$}\right\}.
+    \end{gather*}}
+  \end{defn}}
+  \only<5-6>{
+  \begin{defn}
+    Data $f:\mathbb{D} \longrightarrow \mathbb{C}^n$ olomorfa indichiamo con $Df(z)$ il differenziale di $f$ in $z \in \mathbb{D}$. La \textit{metrica di Kobayashi} su $\Omega$ limitato è
+    $$K_{\Omega}(x;Z)=\inf\{|v| \mid v \in \mathbb{C}, \text{ esiste }f:\mathbb{D} \longrightarrow \Omega$$
+    $$\text{ olomorfa con } f(0)=x, Df(0)v=Z\},$$
+    che induce la \textit{distanza di Kobayashi} $k_{\Omega}$.
+  \end{defn}
+  }
+  \only<6>{Le funzioni olomorfe sono semicontrazioni rispetto a $K_{\Omega}$ e $k_{\Omega}$.}
+\end{frame}
+
+\begin{frame}[t]
+  \frametitle{Domini strettamente pseudoconvessi e iperbolicità di Gromov}
+  \only<1-3>{\begin{defn}
+    Sia $(X,d)$ uno spazio metrico proprio. Dati $x,y,w \in X$ il \textit{prodotto di Gromov} tra $x$ e $y$ con punto base $w$ è $(x,y)_w=\frac{1}{2}\big(d(x,w)+d(y,w)-d(x,y)\big)$. Dato $\delta \ge 0$, diciamo che $X$ è \textit{$\delta$-iperbolico} se
+    $$(x,y)_w \ge \min\{(x,z)_w,(y,z)_w\}-\delta\text{ per ogni }x,y,z,w \in X.$$
+    \only<2>{Fissato $w \in X$, il \textit{bordo iperbolico} $\partial_GX$ è costruito come classi di equivalenza delle successioni $(x_i)$ che convergono a infinito, cioè tali che $\displaystyle\lim_{i,j\rightarrow \infty}(x_i,x_j)_w=\infty$; due tali successioni $(x_i), (y_i)$ sono equivalenti se $\displaystyle\lim_{i\rightarrow \infty}(x_i,y_i)_w=\infty$.}
+  \end{defn}}
+  \only<3>{\begin{block}{Teorema (Balogh-Bonk, 2000)}\begin{itshape} Sia $\Omega$ un dominio limitato e strettamente pseudoconvesso, e sia $k_{\Omega}$ la distanza di Kobayashi su $\Omega$. Allora $(\Omega,k_{\Omega})$ è Gromov-iperbolico, e il bordo iperbolico $\partial_G\Omega$ può essere identificato con il bordo euclideo $\partial\Omega$.
+  \end{itshape}\end{block}}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conseguenze: estensioni al bordo di funzioni olomorfe}
+  \begin{cor}
+    Siano $\Omega_1, \Omega_2 \subseteq \mathbb{C}^n$ domini limitati e strettamente pseudoconvessi, e sia $f:\Omega_1 \longrightarrow \Omega_2$ una funzione olomorfa propria. Allora $f$ si estende con continuità a $\bar{f}:\overline{\Omega}_1\longrightarrow\overline{\Omega}_2$ tale che $\bar{f}(\partial\Omega_1)\subseteq\partial\Omega_2$ e la restrizione al bordo è lipschitziana rispetto alle distanze di Carnot-Carathéodory sui bordi.
+  \end{cor}
+\end{frame}
+
+\begin{frame}[t]
+  \frametitle{Conseguenze: dinamica olomorfa}
+  \only<1-4>{
+  \begin{block}{Teorema (Wolff-Denjoy, 1926)}\begin{itshape}
+    (Wolff-Denjoy) Sia $f:\mathbb{D} \longrightarrow \mathbb{D}$ olomorfa e senza punti fissi. Allora esiste un unico $\tau \in \partial\mathbb{D}$ tale che $f^k \longrightarrow \tau$ uniformemente sui compatti.
+  \end{itshape}\end{block}
+  }
+  \only<2-4>{
+  Karlsson, 2001: sotto opportune ipotesi, che sono soddisfatte dagli spazi Gromov-iperbolici, valgono dei risultati simili per semicontrazioni dallo spazio in sé.
+  }
+
+  \only<3-4>{
+  Usando il teorema di Balogh-Bonk e il fatto che le funzioni olomorfe sono delle semicontrazioni rispetto a $k_{\Omega}$, si ottiene una generalizzazione di Wolff-Denjoy per domini $\Omega$ limitati e strettamente pseudoconvessi.
+  }
+  \only<4>{
+  \begin{block}{Corollario (Abate, 1991)}\begin{itshape}
+    Sia $f:\Omega \longrightarrow \Omega$ una funzione olomorfa. Allora vale una delle seguenti: \\
+    \begin{enumerate}
+      \item le orbite di $f$ sono relativamente compatte in $\Omega$; oppure,
+      \item le orbite di $f$ convergono tutte a un unico punto del bordo.
+    \end{enumerate}
+  \end{itshape}\end{block}
+  }
+\end{frame}
+
+\begin{frame}
+  \frametitle{Altre applicazioni dell'iperbolicità di Gromov}
+  L'iperbolicità di Gromov per domini $\Omega$ segue anche da ipotesi diverse da quelle che abbiamo usato.
+  \pause
+
+  Zimmer, 2016: caratterizzazione dei domini convessi che sono Gromov-iperbolici con la metrica di Kobayashi; \pause seguono risultati, analoghi a quelli visti, di estensione al bordo e dinamica olomorfa.
+  \pause
+
+  Zimmer, 2022: per i domini limitati convessi Gromov-iperbolici (non necessariamente con bordo regolare) valgono delle stime subellittiche per le soluzioni del problema $\bar{\partial}$-Neumann, già estensivamente studiate per i domini strettamente pseudoconvessi (quindi con bordo regolare).
+\end{frame}
