@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{mstyle}
+\usepackage{pgfplots}
+\usetikzlibrary{intersections, pgfplots.fillbetween}
+
+\title{Titolo}
+\author{Autore (lasciare vuoto per non inserire autori)}
+\date{Data (lasciare vuoto per non inserire la data)}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+
+\section*{Introduzione}
+\addcontentsline{toc}{section}{Introduzione}
+\input{secs/intro.tex}
+
+\newpage
+
+\section{Una sezione}
+\subsection{Una sottosezione}
+\input{secs/sottosezione.tex}
+
+\newpage
+
+\input{secs/biblio.tex}
+\addcontentsline{toc}{section}{Riferimenti bibliografici}
+
+\newpage
+
+\section*{Ringraziamenti}
+\addcontentsline{toc}{section}{Ringraziamenti}
+\input{secs/grazie.tex}
+
+\end{document}

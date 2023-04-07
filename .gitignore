@@ -1,0 +1,9 @@
+*.aux
+*.log
+*.toc
+*.idx
+*.out
+*.synctex.gz
+tmp/*
+*/.DS_store/*
+*/build/*
