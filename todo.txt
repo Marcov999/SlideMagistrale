@@ -1,7 +1,14 @@
 Nell'ordine:
-- in def.tex: motivazione, risultati noti e definizioni;
-- in teo.tex: enunciato del teorema principale, esempi e schema della dimostrazione;
+- in teo.tex: esempi e schema della dimostrazione;
 - in dim.tex: lemmi tecnici (alcuni con dimostrazione) e dimostrazione del teorema principale, ``Grazie per l'attenzione!'', bibliografia principale
 
 Poi:
 - scrivere `Screenplay (sort of)'
+
+Screenplay (sort of)
+
+Frase iniziale: "Buongiorno (o salve, se sarà nel pomeriggio) a tutti! L'obiettivo di questa presentazione è dimostrare una generalizzazione del teorema di Wolff-Denjoy per sottovarietà di varietà complesse astratte che soddisfano opportune ipotesi."
+Slide 1: racconta il teorema di Wolff-Denjoy.
+Slide 2: racconta le def che dai qui e il teorema di Abate (generalizzazione in più variabili). Di' che noi useremo delle ipotesi più generali della Gromov-iperbolicità, sempre soddisfatte dai domini limitati e strettamente pseudoconvessi.
+Slide 3: racconta la condizione di visibilità (ci sono i disegnini!).
+Slide 4: definisci taut e racconta l'enunciato del teorema. Specifica che non è proprio preso dalle cit, ma che è stato dimostrato combinando i risultati di entrambi i preprint.

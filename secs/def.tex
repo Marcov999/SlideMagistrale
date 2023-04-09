@@ -1,86 +1,113 @@
+\begin{frame}
+  \frametitle{Il teorema di Wolff-Denjoy}
+  Sia $\mathbb{D}$ il disco unitario in $\mathbb{C}$.\pause
+  \begin{block}{Teorema (Wolff-Denjoy, 1926)}
+    \begin{itshape}
+      Sia $f:\mathbb{D} \longrightarrow \mathbb{D}$ una funzione olomorfa. \pause Allora vale esattamente una delle seguenti affermazioni:\pause
+      \begin{itemize}
+        \item la funzione $f$ ha un punto fisso nel disco; \pause oppure,
+        \item esiste un unico punto del bordo del disco tale che la successione delle iterate di $f$ converge, uniformemente sui compatti, a quel punto.
+      \end{itemize}
+    \end{itshape}
+  \end{block}
+\end{frame}
+
 \begin{frame}[t]
-  \frametitle{Domini strettamente pseudoconvessi e metrica di Kobayashi}
-  \only<1-2>{
-  Sia $\mathbb{D}$ il disco unitario in $\mathbb{C}$. Su $\mathbb{D}$ possiamo mettere la distanza iperbolica $\omega$, indotta dalla metrica di Poincaré $\frac{|\diff z|}{1-|z|^2}$, che lo rende uno spazio iperbolico. \\
-
-  }
-  \only<2>{
-  \,
-
-  Setting: fissiamo $\Omega \subseteq \mathbb{C}^n, n \ge 2$ un dominio limitato con bordo $C^2$, cioè esiste $\rho \in C^2(\mathbb{C}^n)$ tale che $\Omega=\{\rho(z)<0\}$ e $\diff\rho\not=0$ in ogni punto di $\partial\Omega$.
-  Come $\rho$ si può prendere $-\delta(x)$ per $x \in \Omega$ e $\delta(x)$ per $x \in \mathbb{C}^n\setminus\Omega$, dove $\delta(x)=\text{dist}(x,\partial\Omega)$.}
-  \only<3-4>{
-      \begin{defn}
-        Dato $p \in \partial\Omega$, lo \textit{spazio tangente complesso} a $\partial\Omega$ in $p$ è $H_p\partial\Omega=\{Z \in \mathbb{C}^n \mid \langle \bar{\partial}\rho(p),Z\rangle=0\}$. Diciamo che $\Omega$ è \textit{strettamente pseudoconvesso} se la \textit{forma di Levi}
-      $$L_{\rho}(p;Z)=\sum_{\nu,\mu=1}^n \frac{\partial^2\rho}{\partial z_\nu\partial\bar{z}_\mu}(p)Z_\nu\bar{Z}_\mu, \quad Z=(Z_1,\dots,Z_n) \in \mathbb{C}^n$$
-      è definita positiva in $H_p\partial\Omega$ per ogni $p \in \partial\Omega$.
-
-      \only<4>{La distanza indotta su $\partial\Omega$ è la \textit{distanza di Carnot-Carathéodory}
-      \begin{gather*}
-        d_H(p,q)=\inf\left\{\int_0^1L_{\rho}\big(\alpha(t);\dot{\alpha}(t)\big)^{1/2}\diff t \mid \alpha \text{ curva orizzontale tra $p$ e $q$}\right\}.
-    \end{gather*}}
-  \end{defn}}
-  \only<5-6>{
-  \begin{defn}
-    Data $f:\mathbb{D} \longrightarrow \mathbb{C}^n$ olomorfa indichiamo con $Df(z)$ il differenziale di $f$ in $z \in \mathbb{D}$. La \textit{metrica di Kobayashi} su $\Omega$ limitato è
-    $$K_{\Omega}(x;Z)=\inf\{|v| \mid v \in \mathbb{C}, \text{ esiste }f:\mathbb{D} \longrightarrow \Omega$$
-    $$\text{ olomorfa con } f(0)=x, Df(0)v=Z\},$$
-    che induce la \textit{distanza di Kobayashi} $k_{\Omega}$.
+  \frametitle{Generalizzazione ai domini limitati e strettamente pseudoconvessi}
+  \only<1>{
+    \begin{defn}
+      La \textit{distanza di Poincaré} (o \textit{iperbolica}) $\omega$ su $\mathbb{D}$ è data da
+      \begin{equation*}
+          \omega(z_1,z_2)=\frac{1}{2}\log{\frac{1+\left|\frac{z_1-z_2}{1-\bar{z}_1z_2}\right|}{1-\left|\frac{z_1-z_2}{1-\bar{z}_1z_2}\right|}}
+      \end{equation*}
+      per ogni $z_1,z_2 \in \mathbb{D}$.
   \end{defn}
   }
-  \only<6>{Le funzioni olomorfe sono semicontrazioni rispetto a $K_{\Omega}$ e $k_{\Omega}$.}
-\end{frame}
-
-\begin{frame}[t]
-  \frametitle{Domini strettamente pseudoconvessi e iperbolicità di Gromov}
-  \only<1-3>{\begin{defn}
-    Sia $(X,d)$ uno spazio metrico proprio. Dati $x,y,w \in X$ il \textit{prodotto di Gromov} tra $x$ e $y$ con punto base $w$ è $(x,y)_w=\frac{1}{2}\big(d(x,w)+d(y,w)-d(x,y)\big)$. Dato $\delta \ge 0$, diciamo che $X$ è \textit{$\delta$-iperbolico} se
-    $$(x,y)_w \ge \min\{(x,z)_w,(y,z)_w\}-\delta\text{ per ogni }x,y,z,w \in X.$$
-    \only<2>{Fissato $w \in X$, il \textit{bordo iperbolico} $\partial_GX$ è costruito come classi di equivalenza delle successioni $(x_i)$ che convergono a infinito, cioè tali che $\displaystyle\lim_{i,j\rightarrow \infty}(x_i,x_j)_w=\infty$; due tali successioni $(x_i), (y_i)$ sono equivalenti se $\displaystyle\lim_{i\rightarrow \infty}(x_i,y_i)_w=\infty$.}
-  \end{defn}}
-  \only<3>{\begin{block}{Teorema (Balogh-Bonk, 2000)}\begin{itshape} Sia $\Omega$ un dominio limitato e strettamente pseudoconvesso, e sia $k_{\Omega}$ la distanza di Kobayashi su $\Omega$. Allora $(\Omega,k_{\Omega})$ è Gromov-iperbolico, e il bordo iperbolico $\partial_G\Omega$ può essere identificato con il bordo euclideo $\partial\Omega$.
-  \end{itshape}\end{block}}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Conseguenze: estensioni al bordo di funzioni olomorfe}
-  \begin{cor}
-    Siano $\Omega_1, \Omega_2 \subseteq \mathbb{C}^n$ domini limitati e strettamente pseudoconvessi, e sia $f:\Omega_1 \longrightarrow \Omega_2$ una funzione olomorfa propria. Allora $f$ si estende con continuità a $\bar{f}:\overline{\Omega}_1\longrightarrow\overline{\Omega}_2$ tale che $\bar{f}(\partial\Omega_1)\subseteq\partial\Omega_2$ e la restrizione al bordo è lipschitziana rispetto alle distanze di Carnot-Carathéodory sui bordi.
-  \end{cor}
-\end{frame}
-
-\begin{frame}[t]
-  \frametitle{Conseguenze: dinamica olomorfa}
-  \only<1-4>{
-  \begin{block}{Teorema (Wolff-Denjoy, 1926)}\begin{itshape}
-    (Wolff-Denjoy) Sia $f:\mathbb{D} \longrightarrow \mathbb{D}$ olomorfa e senza punti fissi. Allora esiste un unico $\tau \in \partial\mathbb{D}$ tale che $f^k \longrightarrow \tau$ uniformemente sui compatti.
-  \end{itshape}\end{block}
+  \only<2-3>{
+    \begin{defn}
+      Sia $X$ una varietà complessa e connessa; la \textit{pseudodistanza di Kobayashi} su $X$ è data da
+    \begin{equation*}\begin{split}
+        k_X(z,w)=&\inf\Bigg\{\sum_{j=1}^m \omega(\zeta_{j-1},\zeta_j) \bigg\vert \text{esistono }m\in\mathbb{N},\text{ punti }\zeta_0,\dots,\zeta_m \in \mathbb{D}\text{ e}\\
+        &\text{funzioni }\varphi_1,\dots,\varphi_m\in\text{Hol}(\mathbb{D},X) \text{ tali che } \varphi_1(\zeta_0)=z,\\
+        &\varphi_m(\zeta_m)=w\text{ e }\varphi_j(\zeta_j)=\varphi_{j+1}(\zeta_j)\text{ per }j=1,\dots,m-1\Bigg\}
+    \end{split}\end{equation*}
+    per $z,w \in X$.
+    
+    \only<3>{Se $k_X$ è una distanza, diremo che $X$ è \textit{Kobayashi-iperbolica}.}
+    \end{defn}
   }
-  \only<2-4>{
-  Karlsson, 2001: sotto opportune ipotesi, che sono soddisfatte dagli spazi Gromov-iperbolici, valgono dei risultati simili per semicontrazioni dallo spazio in sé.
-  }
-
-  \only<3-4>{
-  Usando il teorema di Balogh-Bonk e il fatto che le funzioni olomorfe sono delle semicontrazioni rispetto a $k_{\Omega}$, si ottiene una generalizzazione di Wolff-Denjoy per domini $\Omega$ limitati e strettamente pseudoconvessi.
-  }
-  \only<4>{
-  \begin{block}{Corollario (Abate, 1991)}\begin{itshape}
-    Sia $f:\Omega \longrightarrow \Omega$ una funzione olomorfa. Allora vale una delle seguenti: \\
+  \only<4->{
+  \begin{block}{Teorema (Abate, 1991)}\begin{itshape}
+    Siano $\Omega\subseteq\mathbb{C}^n$ un dominio limitato e strettamente pseudoconvesso e $f:\Omega \longrightarrow \Omega$ una funzione olomorfa. \setcounter{beamerpauses}{4}\pause Allora vale esattamente una delle seguenti affermazioni: \pause
     \begin{enumerate}
-      \item le orbite di $f$ sono relativamente compatte in $\Omega$; oppure,
-      \item le orbite di $f$ convergono tutte a un unico punto del bordo.
+      \item le orbite di $f$ sono relativamente compatte in $\Omega$; \pause oppure,
+      \item esiste un unico punto di $\partial\Omega$ tale che le iterate di $f$ convergono tutte, uniformemente sui compatti, a quel punto.
     \end{enumerate}
-  \end{itshape}\end{block}
+  \end{itshape}\end{block}}\only<8->{
+    \textit{Traccia della dimostrazione:} Per un teorema di Balogh e Bonk del 2000, $(\Omega,k_\Omega)$ è uno spazio metrico Gromov-iperbolico. \only<9->{
+
+    Allora soddisfa le ipotesi di un teorema di Karlsson del 2001, per cui le orbite sono limitate (in $k_\Omega$) o convergono a un unico punto del bordo.} \only<10->{
+
+    Per avere la convergenza uniforme sui compatti si applica il teorema di Montel. \qed}
   }
 \end{frame}
 
-\begin{frame}
-  \frametitle{Altre applicazioni dell'iperbolicità di Gromov}
-  L'iperbolicità di Gromov per domini $\Omega$ segue anche da ipotesi diverse da quelle che abbiamo usato.
-  \pause
-
-  Zimmer, 2016: caratterizzazione dei domini convessi che sono Gromov-iperbolici con la metrica di Kobayashi; \pause seguono risultati, analoghi a quelli visti, di estensione al bordo e dinamica olomorfa.
-  \pause
-
-  Zimmer, 2022: per i domini limitati convessi Gromov-iperbolici (non necessariamente con bordo regolare) valgono delle stime subellittiche per le soluzioni del problema $\bar{\partial}$-Neumann, già estensivamente studiate per i domini strettamente pseudoconvessi (quindi con bordo regolare).
+\begin{frame}[t]
+  \frametitle{La condizione di visibilità}
+  \only<1>{
+    \begin{defn}
+      Sia $X$ una varietà complessa; la \textit{pseudometrica di Kobayashi} su $X$ è
+      \begin{equation*}\begin{split}
+          K_X(x;Z)=&\inf\{|v| \mid v \in \mathbb{C}, \text{ esiste }f \in \text{Hol}(\mathbb{D},X) \\
+          &\text{ tale che } f(0)=x, \diff_0 f(v)=Z\}
+      \end{split}\end{equation*}
+      per ogni $x \in X$ e $Z \in T_xX$.
+    \end{defn}
+  }
+  \only<2-5>{
+    \begin{defn}
+      Sia $X$ una varietà complessa e connessa; fissiamo due costanti $\lambda \ge 1$ e $\kappa \ge 0$. Sia $I\subseteq \mathbb{R}$ un intervallo; \setcounter{beamerpauses}{2}\pause una curva $\sigma:I \longrightarrow X$ è detta una \textit{$(\lambda,\kappa)$-simil-geodetica} se:\pause
+    \begin{enumerate}
+        \item per ogni $s,t \in I$ si ha
+        \begin{equation*}
+            \frac{1}{\lambda}|t-s|-\kappa \le k_X\big(\sigma(s),\sigma(t)\big)\le\lambda|t-s|+\kappa;
+        \end{equation*}\pause
+        \item $\sigma$ è assolutamente continua rispetto a $d_X$ (quindi $\sigma'(t)$ esiste per quasi ogni $t \in I$) e per quasi ogni $t \in I$ si ha
+        \begin{equation*}
+            K_X\big(\sigma(t);\sigma'(t)\big) \le \lambda.
+        \end{equation*}
+    \end{enumerate}
+    \end{defn}
+  }
+  \only<6-9>{
+    \begin{defn}
+      Sia $X$ una sottovarietà complessa e connessa di una varietà complessa $Y$, e fissiamo $\lambda \ge 1$ e $\kappa \ge 0$. \setcounter{beamerpauses}{6}\pause Diciamo che $X$ è \textit{$(\lambda,\kappa)$-visibile} se:\pause
+      \begin{enumerate}
+          \item ogni due punti distinti di $X$ possono essere collegati da una $(\lambda,\kappa)$-simil-geodetica;\pause
+          \item per ogni coppia di punti $p,q\in\partial_YX$ con $p\not=q$, esistono in $\overline{X}$ due intorni $V$ e $W$, di $p$ e $q$ rispettivamente, con chiusura disgiunta, e un compatto $K$ di $X$ tali che  ogni $(\lambda,\kappa)$-simil-geodetica in $X$ che collega un punto di $V$ a un punto di $W$ interseca $K$.
+      \end{enumerate}
+  \end{defn}
+  }
+  \only<10-14>{
+    Caso escluso: le simil-geodetiche da $U$ a $V$ fuggono dal compatto $K$.
+  }
+  \only<10>{
+    \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{vis1.png}
+  }
+  \only<11>{
+    \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{vis2.png}
+  }
+  \only<12>{
+    \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{vis3.png}
+  }
+  \only<13>{
+    \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{nonvis4.png}
+  }
+  \only<14>{
+    \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{nonvis5.png}
+  }
+  \only<15>{
+    \includegraphics[width=1.05\textwidth, trim=0 16cm 0 3cm]{vis1.png}
+    Condizione di visibilità: le simil-geodetiche ``curvano verso l'interno'', rimanendo dentro il compatto $K$.
+  }
 \end{frame}
