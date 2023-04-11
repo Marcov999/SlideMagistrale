@@ -15,4 +15,5 @@ Slide 5: definisci i Caltrops (quando arrivi al ``solido di rivoluzione'', a voc
 Slide 6: spiega al volo come si costruisce un Caltrop, e dì che Bharali e Maitra li costruiscono anche con un numero arbitrario di punte.
 Slide 7: racconta al volo come si fa a dire che i Caltrops sono visibili.
 Slide 8: racconta al volo come si fa a dire che i Caltrops sono taut.
+(In generale, nelle dim. per i Caltrops: sono troppo lunghe per accennare anche solo un minimo di dettagli; magari dillo bene una volta, poi iteralo con frasi tipo "anche qui, non abbiamo tempo di vedere i dettagli")
 Slide 9: spiega qual è la strada per dimostrare il teorema di tipo ``Wolff-Denjoy'' (dovresti conoscere abbastanza bene la dimostrazione da ricordarti i dettagli importanti da sottolineare).
