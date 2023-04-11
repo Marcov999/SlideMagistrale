@@ -1,5 +1,4 @@
 Nell'ordine:
-- in teo.tex: esempi e schema della dimostrazione;
 - in dim.tex: lemmi tecnici (alcuni con dimostrazione) e dimostrazione del teorema principale, ``Grazie per l'attenzione!'', bibliografia principale
 
 Poi:
@@ -12,3 +11,8 @@ Slide 1: racconta il teorema di Wolff-Denjoy.
 Slide 2: racconta le def che dai qui e il teorema di Abate (generalizzazione in più variabili). Di' che noi useremo delle ipotesi più generali della Gromov-iperbolicità, sempre soddisfatte dai domini limitati e strettamente pseudoconvessi.
 Slide 3: racconta la condizione di visibilità (ci sono i disegnini!).
 Slide 4: definisci taut e racconta l'enunciato del teorema. Specifica che non è proprio preso dalle cit, ma che è stato dimostrato combinando i risultati di entrambi i preprint.
+Slide 5: definisci i Caltrops (quando arrivi al ``solido di rivoluzione'', a voce chiamalo anche punta).
+Slide 6: spiega al volo come si costruisce un Caltrop, e dì che Bharali e Maitra li costruiscono anche con un numero arbitrario di punte.
+Slide 7: racconta al volo come si fa a dire che i Caltrops sono visibili.
+Slide 8: racconta al volo come si fa a dire che i Caltrops sono taut.
+Slide 9: spiega qual è la strada per dimostrare il teorema di tipo ``Wolff-Denjoy'' (dovresti conoscere abbastanza bene la dimostrazione da ricordarti i dettagli importanti da sottolineare).

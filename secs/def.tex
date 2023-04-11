@@ -33,20 +33,29 @@
     \end{split}\end{equation*}
     per $z,w \in X$.
     
-    \only<3>{Se $k_X$ è una distanza, diremo che $X$ è \textit{Kobayashi-iperbolica}.}
+    \setcounter{beamerpauses}{2}\pause Se $k_X$ è una distanza, diremo che $X$ è \textit{Kobayashi-iperbolica}.
     \end{defn}
   }
-  \only<4->{
+  \only<4-7>{
+    \begin{defn}
+      Sia $\Omega \subseteq \mathbb{C}^n, n \ge 2$ un dominio limitato con bordo $C^2$, cioè esiste una \textit{funzione di definizione} $\rho \in C^2(\mathbb{C}^n)$ tale che $\Omega=\{\rho(z)<0\}$ e $\diff\rho\not=0$ in ogni punto di $\partial\Omega$. \setcounter{beamerpauses}{4}\pause Dato $p \in \partial\Omega$, lo \textit{spazio tangente complesso} a $\partial\Omega$ in $p$ è $H_p\partial\Omega=\{Z \in \mathbb{C}^n \mid \langle \bar{\partial}\rho(p),Z\rangle=0\}$. \pause Diciamo che $\Omega$ è \textit{strettamente pseudoconvesso in $p$} se la \textit{forma di Levi}
+      $$L_{\rho}(p;Z)=\sum_{\nu,\mu=1}^n \frac{\partial^2\rho}{\partial z_\nu\partial\bar{z}_\mu}(p)Z_\nu\bar{Z}_\mu, \quad Z=(Z_1,\dots,Z_n) \in \mathbb{C}^n$$
+      è definita positiva in $H_p\partial\Omega$.\pause
+
+      Diciamo che $\Omega$ è \textit{strettamente pseudoconvesso} se è strettamente pseudoconvesso in $p$ per ogni $p \in \partial\Omega$.
+    \end{defn}
+  }
+  \only<8->{
   \begin{block}{Teorema (Abate, 1991)}\begin{itshape}
-    Siano $\Omega\subseteq\mathbb{C}^n$ un dominio limitato e strettamente pseudoconvesso e $f:\Omega \longrightarrow \Omega$ una funzione olomorfa. \setcounter{beamerpauses}{4}\pause Allora vale esattamente una delle seguenti affermazioni: \pause
+    Siano $\Omega\subseteq\mathbb{C}^n$ un dominio limitato e strettamente pseudoconvesso e $f:\Omega \longrightarrow \Omega$ una funzione olomorfa. \setcounter{beamerpauses}{8}\pause Allora vale esattamente una delle seguenti affermazioni: \pause
     \begin{enumerate}
       \item le orbite di $f$ sono relativamente compatte in $\Omega$; \pause oppure,
       \item esiste un unico punto di $\partial\Omega$ tale che le iterate di $f$ convergono tutte, uniformemente sui compatti, a quel punto.
     \end{enumerate}
-  \end{itshape}\end{block}}\only<8->{
-    \textit{Traccia della dimostrazione:} Per un teorema di Balogh e Bonk del 2000, $(\Omega,k_\Omega)$ è uno spazio metrico Gromov-iperbolico. \only<9->{
+  \end{itshape}\end{block}}\only<12->{
+    \textit{Traccia della dimostrazione:} Per un teorema di Balogh e Bonk del 2000, $(\Omega,k_\Omega)$ è uno spazio metrico Gromov-iperbolico. \only<13->{
 
-    Allora soddisfa le ipotesi di un teorema di Karlsson del 2001, per cui le orbite sono limitate (in $k_\Omega$) o convergono a un unico punto del bordo.} \only<10->{
+    Allora soddisfa le ipotesi di un teorema di Karlsson del 2001, per cui le orbite sono limitate (in $k_\Omega$) o convergono a un unico punto del bordo.} \only<14->{
 
     Per avere la convergenza uniforme sui compatti si applica il teorema di Montel. \qed}
   }
@@ -54,7 +63,7 @@
 
 \begin{frame}[t]
   \frametitle{La condizione di visibilità}
-  \only<1>{
+  \only<1-2>{
     \begin{defn}
       Sia $X$ una varietà complessa; la \textit{pseudometrica di Kobayashi} su $X$ è
       \begin{equation*}\begin{split}
@@ -64,9 +73,12 @@
       per ogni $x \in X$ e $Z \in T_xX$.
     \end{defn}
   }
-  \only<2-5>{
+  \only<2>{
+    Le funzioni olomorfe sono semicontrazioni sia rispetto a $K_X$ che rispetto a $k_X$.
+  }
+  \only<3-6>{
     \begin{defn}
-      Sia $X$ una varietà complessa e connessa; fissiamo due costanti $\lambda \ge 1$ e $\kappa \ge 0$. Sia $I\subseteq \mathbb{R}$ un intervallo; \setcounter{beamerpauses}{2}\pause una curva $\sigma:I \longrightarrow X$ è detta una \textit{$(\lambda,\kappa)$-simil-geodetica} se:\pause
+      Sia $X$ una varietà complessa e connessa; fissiamo due costanti $\lambda \ge 1$ e $\kappa \ge 0$. Sia $I\subseteq \mathbb{R}$ un intervallo; \setcounter{beamerpauses}{3}\pause una curva $\sigma:I \longrightarrow X$ è detta una \textit{$(\lambda,\kappa)$-simil-geodetica} se:\pause
     \begin{enumerate}
         \item per ogni $s,t \in I$ si ha
         \begin{equation*}
@@ -79,34 +91,34 @@
     \end{enumerate}
     \end{defn}
   }
-  \only<6-9>{
+  \only<7-10>{
     \begin{defn}
-      Sia $X$ una sottovarietà complessa e connessa di una varietà complessa $Y$, e fissiamo $\lambda \ge 1$ e $\kappa \ge 0$. \setcounter{beamerpauses}{6}\pause Diciamo che $X$ è \textit{$(\lambda,\kappa)$-visibile} se:\pause
+      Sia $X$ una sottovarietà complessa e connessa di una varietà complessa $Y$, e fissiamo $\lambda \ge 1$ e $\kappa \ge 0$. \setcounter{beamerpauses}{7}\pause Diciamo che $X$ è \textit{$(\lambda,\kappa)$-visibile} se:\pause
       \begin{enumerate}
           \item ogni due punti distinti di $X$ possono essere collegati da una $(\lambda,\kappa)$-simil-geodetica;\pause
           \item per ogni coppia di punti $p,q\in\partial_YX$ con $p\not=q$, esistono in $\overline{X}$ due intorni $V$ e $W$, di $p$ e $q$ rispettivamente, con chiusura disgiunta, e un compatto $K$ di $X$ tali che  ogni $(\lambda,\kappa)$-simil-geodetica in $X$ che collega un punto di $V$ a un punto di $W$ interseca $K$.
       \end{enumerate}
   \end{defn}
   }
-  \only<10-14>{
+  \only<11-15>{
     Caso escluso: le simil-geodetiche da $U$ a $V$ fuggono dal compatto $K$.
   }
-  \only<10>{
+  \only<11>{
     \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{vis1.png}
   }
-  \only<11>{
+  \only<12>{
     \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{vis2.png}
   }
-  \only<12>{
+  \only<13>{
     \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{vis3.png}
   }
-  \only<13>{
+  \only<14>{
     \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{nonvis4.png}
   }
-  \only<14>{
+  \only<15>{
     \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{nonvis5.png}
   }
-  \only<15>{
+  \only<16>{
     \includegraphics[width=1.05\textwidth, trim=0 16cm 0 3cm]{vis1.png}
     Condizione di visibilità: le simil-geodetiche ``curvano verso l'interno'', rimanendo dentro il compatto $K$.
   }
