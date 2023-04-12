@@ -1,8 +1,6 @@
-Nell'ordine:
-- in dim.tex: lemmi tecnici (alcuni con dimostrazione) e dimostrazione del teorema principale, ``Grazie per l'attenzione!'', bibliografia principale
-
-Poi:
-- scrivere `Screenplay (sort of)'
+Da fare:
+- riguardare tutto, correggere, fare le prove, ricorreggere adeguandoti alle prove e, ovviamente, correggere lo screenplay adeguandoti alle prove;
+- tutte le correzioni che ti dirà Abate, che ovviamente influiranno sia sulle slide che sullo screenplay.
 
 Screenplay (sort of)
 
@@ -17,3 +15,7 @@ Slide 7: racconta al volo come si fa a dire che i Caltrops sono visibili.
 Slide 8: racconta al volo come si fa a dire che i Caltrops sono taut.
 (In generale, nelle dim. per i Caltrops: sono troppo lunghe per accennare anche solo un minimo di dettagli; magari dillo bene una volta, poi iteralo con frasi tipo "anche qui, non abbiamo tempo di vedere i dettagli")
 Slide 9: spiega qual è la strada per dimostrare il teorema di tipo ``Wolff-Denjoy'' (dovresti conoscere abbastanza bene la dimostrazione da ricordarti i dettagli importanti da sottolineare).
+Slide 10: il teorema di Abate. Osserva che a noi interessa l'equivalenza tra il punto 1 e il punto 4. L'esempio (spiega perché la funzione è un controesempio).
+Slide 11: lemma per lemma, spiega cosa ci sta dicendo l'enunciato e, dove serve, chiarisci le vaghe dimostrazioni scritte.
+Slide 12: Nell'enunciato, spiega a voce cosa s'intende con funzione limite di F. Chiarisci bene che dirai solo gli step e le idee principali senza nessuna pretesa che si capisca qualcosa, e illustra i passaggi della dimostrazione a grandi linee meglio che puoi (cioè, meglio che ti riesce...).
+Ultime slide: "Grazie per l'attenzione!", poi metti sulla bibliografia così chi vuole se la guarda.
