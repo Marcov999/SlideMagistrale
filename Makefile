@@ -4,6 +4,7 @@ all: SlideMagistrale.pdf
 
 SlideMagistrale.pdf: main.tex $(SECS) mstyle.sty
 	pdflatex main.tex
+	#pdflatex main.tex
 	mkdir -p build
 	mv *.toc build
 	mv *.aux build

@@ -7,11 +7,11 @@ Screenplay (sort of)
 Frase iniziale: "Buongiorno (o salve, se sarà nel pomeriggio) a tutti! L'obiettivo di questa presentazione è dimostrare una generalizzazione del teorema di Wolff-Denjoy per sottovarietà di varietà complesse astratte che soddisfano opportune ipotesi."
 Slide 1: racconta il teorema di Wolff-Denjoy.
 Slide 2: racconta le def che dai qui e il teorema di Abate (generalizzazione in più variabili). Di' che noi useremo delle ipotesi più generali della Gromov-iperbolicità, sempre soddisfatte dai domini limitati e strettamente pseudoconvessi.
-Slide 3: racconta la condizione di visibilità (ci sono i disegnini!).
+Slide 3: quando definisci le simil-geodetiche: di' a voce rispetto a quale distanza sono assolutamente continue; poi: racconta la condizione di visibilità (ci sono i disegnini!).
 Slide 4: definisci taut e racconta l'enunciato del teorema. Specifica che non è proprio preso dalle cit, ma che è stato dimostrato combinando i risultati di entrambi i preprint.
 Slide 5: definisci i Caltrops (quando arrivi al ``solido di rivoluzione'', a voce chiamalo anche punta).
 Slide 6: spiega al volo come si costruisce un Caltrop, e dì che Bharali e Maitra li costruiscono anche con un numero arbitrario di punte.
-Slide 7: racconta al volo come si fa a dire che i Caltrops sono visibili.
+Slide 7: racconta al volo come si fa a dire che i Caltrops sono visibili; dopo aver enunciato il teorema di Bharali e Maitra, di' che la dimostrazione è omessa perché prevalentemente tecnica.
 Slide 8: racconta al volo come si fa a dire che i Caltrops sono taut.
 (In generale, nelle dim. per i Caltrops: sono troppo lunghe per accennare anche solo un minimo di dettagli; magari dillo bene una volta, poi iteralo con frasi tipo "anche qui, non abbiamo tempo di vedere i dettagli")
 Slide 9: spiega qual è la strada per dimostrare il teorema di tipo ``Wolff-Denjoy'' (dovresti conoscere abbastanza bene la dimostrazione da ricordarti i dettagli importanti da sottolineare).

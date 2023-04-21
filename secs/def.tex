@@ -26,15 +26,14 @@
   \only<2-3>{
     \begin{defn}
       Sia $X$ una varietà complessa e connessa; la \textit{pseudodistanza di Kobayashi} su $X$ è data da
-    \begin{equation*}\begin{split}
+      \begin{equation*}\begin{split}
         k_X(z,w)=&\inf\Bigg\{\sum_{j=1}^m \omega(\zeta_{j-1},\zeta_j) \bigg\vert \text{esistono }m\in\mathbb{N},\text{ punti }\zeta_0,\dots,\zeta_m \in \mathbb{D}\text{ e}\\
         &\text{funzioni }\varphi_1,\dots,\varphi_m\in\text{Hol}(\mathbb{D},X) \text{ tali che } \varphi_1(\zeta_0)=z,\\
         &\varphi_m(\zeta_m)=w\text{ e }\varphi_j(\zeta_j)=\varphi_{j+1}(\zeta_j)\text{ per }j=1,\dots,m-1\Bigg\}
-    \end{split}\end{equation*}
-    per $z,w \in X$.
-    
-    \setcounter{beamerpauses}{2}\pause Se $k_X$ è una distanza, diremo che $X$ è \textit{Kobayashi-iperbolica}; in tal caso, $k_X$ induce la topologia di varietà.
+      \end{split}\end{equation*}
+      per $z,w \in X$.
     \end{defn}
+    \setcounter{beamerpauses}{2}\pause Se $k_X$ è una distanza, diremo che $X$ è \textit{Kobayashi-iperbolica}; in tal caso, si può dimostrare che $k_X$ induce la topologia di varietà.
   }
   \only<4-7>{
     \begin{defn}
@@ -63,7 +62,7 @@
 
 \begin{frame}[t]
   \frametitle{La condizione di visibilità}
-  \only<1-2>{
+  \only<1-3>{
     \begin{defn}
       Sia $X$ una varietà complessa; la \textit{pseudometrica di Kobayashi} su $X$ è
       \begin{equation*}\begin{split}
@@ -73,52 +72,54 @@
       per ogni $x \in X$ e $Z \in T_xX$.
     \end{defn}
   }
-  \only<2>{
+  \only<2-3>{Se $X$ è connessa, si può dimostrare che $k_X$ è la forma integrata di $K_X$.}
+
+  \only<3>{
     Le funzioni olomorfe sono semicontrazioni sia rispetto a $K_X$ che rispetto a $k_X$.
   }
-  \only<3-6>{
+  \only<4-7>{
     \begin{defn}
-      Sia $X$ una varietà complessa e connessa; fissiamo due costanti $\lambda \ge 1$ e $\kappa \ge 0$. Sia $I\subseteq \mathbb{R}$ un intervallo; \setcounter{beamerpauses}{3}\pause una curva $\sigma:I \longrightarrow X$ è detta una \textit{$(\lambda,\kappa)$-simil-geodetica} se:\pause
+      Sia $X$ una varietà complessa e connessa; fissiamo due costanti $\lambda \ge 1$ e $\kappa \ge 0$. Sia $I\subseteq \mathbb{R}$ un intervallo; \setcounter{beamerpauses}{4}\pause una curva $\sigma:I \longrightarrow X$ è detta una \textit{$(\lambda,\kappa)$-simil-geodetica} se:\pause
     \begin{enumerate}
         \item per ogni $s,t \in I$ si ha
         \begin{equation*}
             \frac{1}{\lambda}|t-s|-\kappa \le k_X\big(\sigma(s),\sigma(t)\big)\le\lambda|t-s|+\kappa;
         \end{equation*}\pause
-        \item $\sigma$ è assolutamente continua rispetto a $d_X$ (quindi $\sigma'(t)$ esiste per quasi ogni $t \in I$) e per quasi ogni $t \in I$ si ha
+        \item $\sigma$ è assolutamente continua (quindi $\sigma'(t)$ esiste per quasi ogni $t \in I$) e per quasi ogni $t \in I$ si ha
         \begin{equation*}
             K_X\big(\sigma(t);\sigma'(t)\big) \le \lambda.
         \end{equation*}
     \end{enumerate}
     \end{defn}
   }
-  \only<7-10>{
+  \only<8-11>{
     \begin{defn}
-      Sia $X$ una sottovarietà complessa e connessa di una varietà complessa $Y$, e fissiamo $\lambda \ge 1$ e $\kappa \ge 0$. \setcounter{beamerpauses}{7}\pause Diciamo che $X$ è \textit{$(\lambda,\kappa)$-visibile} se:\pause
+      Sia $X$ una sottovarietà complessa e connessa di una varietà complessa $Y$, e fissiamo $\lambda \ge 1$ e $\kappa \ge 0$. \setcounter{beamerpauses}{8}\pause Diciamo che $X$ è \textit{$(\lambda,\kappa)$-visibile} se:\pause
       \begin{enumerate}
           \item ogni due punti distinti di $X$ possono essere collegati da una $(\lambda,\kappa)$-simil-geodetica;\pause
           \item per ogni coppia di punti $p,q\in\partial_YX$ con $p\not=q$, esistono in $\overline{X}$ due intorni $V$ e $W$, di $p$ e $q$ rispettivamente, con chiusura disgiunta, e un compatto $K$ di $X$ tali che  ogni $(\lambda,\kappa)$-simil-geodetica in $X$ che collega un punto di $V$ a un punto di $W$ interseca $K$.
       \end{enumerate}
   \end{defn}
   }
-  \only<11-15>{
+  \only<12-16>{
     Caso escluso: le simil-geodetiche da $U$ a $V$ fuggono dal compatto $K$.
   }
-  \only<11>{
+  \only<12>{
     \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{vis1.png}
   }
-  \only<12>{
+  \only<13>{
     \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{vis2.png}
   }
-  \only<13>{
+  \only<14>{
     \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{vis3.png}
   }
-  \only<14>{
+  \only<15>{
     \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{nonvis4.png}
   }
-  \only<15>{
+  \only<16>{
     \includegraphics[width=1.05\textwidth, trim=0 18cm 0 3cm]{nonvis5.png}
   }
-  \only<16>{
+  \only<17>{
     \includegraphics[width=1.05\textwidth, trim=0 16cm 0 3cm]{vis1.png}
     Condizione di visibilità: le simil-geodetiche ``curvano verso l'interno'', rimanendo dentro il compatto $K$.
   }
