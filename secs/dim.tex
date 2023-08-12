@@ -11,7 +11,7 @@
     \end{enumerate}
   \end{itshape}\end{block}}
   \only<7-9>{\begin{ex}
-    La palla unitaria in $\mathbb{C}^2$ meno l'origine è Kobayashi-iperbolica e $(\lambda,\kappa)$-visibile per ogni $\lambda\ge 1$ e $\kappa\ge 0$, ma non è taut. \setcounter{beamerpauses}{7}\pause La funzione $f(z,w)=(z/2,e^{i\theta}w)$ è un controesempio al teorema di Abate. \pause Dunque, è anche un controesempio al teorema di tipo ``Wolff-Denjoy''.
+    La palla unitaria in $\mathbb{C}^2$ meno l'origine è Kobayashi-iperbolica e $(\lambda,\kappa)$-visibile per ogni $\lambda\ge 1$ e $\kappa\ge 0$, ma non è taut. \setcounter{beamerpauses}{7}\pause La funzione $f(z,w)=(z/2,e^{i\theta}w)$ è un esempio che mostra come l'ipotesi taut sia indispensabile nel teorema di Abate. \pause Inoltre, mostra anche che è indispensabile nel teorema di tipo ``Wolff-Denjoy''.
   \end{ex}}
 \end{frame}
 
@@ -45,6 +45,49 @@
   $$k_X\big(F^{\mu(j_n)}(z_n),F^{\mu(j_n)}(\tilde{z})\big)\le k_X(z_n,\tilde{z})\longrightarrow 0;$$\pause
   si può dimostrare che, sotto condizioni di visibilità, questo non è possibile per successioni che tendono a punti distinti del bordo. \qed
   }
+\end{frame}
+
+\begin{frame}
+  \frametitle{Caso non relativamente compatto}
+  \only<1-2>{
+    \begin{ex}
+      Consideriamo $Y=\mathbb{C}, X=\{0<\mathfrak{Im}z<1\}$ e $F(z)=z+1$ o $F(z)=z-1$.\\
+
+      \pause\begin{center}
+        \includegraphics[width=0.8\textwidth]{esempio.png}
+      \end{center}
+    \end{ex}
+  }
+  \only<3-9>{
+    \begin{defn}
+      Sia $X$ uno spazio topologico non compatto. \setcounter{beamerpauses}{3}\pause Una \textit{fine} di $X$ è una funzione $e$ con dominio $\{K\subseteq X\mid K\text{ è compatto}\}$ tale che:\pause
+      \begin{enumerate}
+        \item a ogni compatto $K\subseteq X$ associa una componente connessa non vuota di $X\setminus K$;\pause
+        \item per ogni coppia di compatti $K_1\subseteq K_2\subseteq X$ si ha $e(K_2)\subseteq e(K_1)$.\pause
+      \end{enumerate}
+    Indichiamo con $\mathcal{E}(X)$ l'insieme di tutte le fini di $X$.
+  \end{defn}
+  \pause
+  \begin{prop}
+    Sia $X$ uno spazio topologico connesso, localmente connesso, localmente compatto, di Hausdorff e che ammette un'esaustione in compatti. \pause
+    
+    Allora $X^\mathcal{E}=X\cup\mathcal{E}(X)$ ammette una topologia che lo rende una compattificazione di $X$.
+\end{prop}
+  }
+  \only<10->{
+    Problema: se $X$ è sottovarietà di $Y$, non sempre $\overline{X}$ è localmente connessa.\setcounter{beamerpauses}{10} \pause
+    \begin{block}{Teorema (Bharali, Zimmer, 2022)}\begin{itshape}
+      Sia $X$ una sottovarietà taut di una varietà complessa $Y$. \pause Supponiamo che $\overline{X}$ sia localmente connessa e che esista $\kappa_0>0$ tale che $X$ sia $(1,\kappa_0)$-ultravisibile. \pause
+    
+    Sia $F:X \longrightarrow X$ una funzione olomorfa. Allora vale esattamente una delle seguenti affermazioni:\pause
+      \begin{enumerate}
+        \item le orbite dei punti di $X$ tramite $F$ sono relativamente compatte in $X$; \pause oppure,
+        \item esiste un unico punto $\xi\in\partial^\mathcal{E}X$ tale che la successione delle iterate di $F$ converge alla costante $\xi$ in $C^0(X,\overline{X}^\mathcal{E})$.
+      \end{enumerate}
+    \end{itshape}\end{block}
+  }
+  \pause
+  Domanda: ultravisibilità implica locale connessione della chiusura?
 \end{frame}
 
 \begin{frame}

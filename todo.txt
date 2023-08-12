@@ -1,7 +1,3 @@
-Da fare:
-- riguardare tutto, correggere, fare le prove, ricorreggere adeguandoti alle prove e, ovviamente, correggere lo screenplay adeguandoti alle prove;
-- tutte le correzioni che ti dirà Abate, che ovviamente influiranno sia sulle slide che sullo screenplay.
-
 Screenplay (sort of)
 
 Frase iniziale: "Buongiorno (o salve, se sarà nel pomeriggio) a tutti! L'obiettivo di questa presentazione è dimostrare una generalizzazione del teorema di Wolff-Denjoy per sottovarietà di varietà complesse astratte che soddisfano opportune ipotesi."
@@ -12,4 +8,5 @@ Slide 4: definisci taut (di' che esistono diversi esempi di varietà taut) e rac
 Slide 5: spiega qual è la strada per dimostrare il teorema di tipo ``Wolff-Denjoy'' (dovresti conoscere abbastanza bene la dimostrazione da ricordarti i dettagli importanti da sottolineare; racconta anche come si è arrivata a questa generalità).
 Slide 6: il teorema di Abate. Osserva che a noi interessa l'equivalenza tra il punto 1 e il punto 4. L'esempio (spiega perché la funzione è un controesempio).
 Slide 7: lemma per lemma, spiega cosa ci sta dicendo l'enunciato e, dove serve, chiarisci le vaghe dimostrazioni scritte.
+Slide 8: esempio, Alexandroff non basta, servono le fini; def ("sono i modi sensatamente diversi di andare a infinito") e prop; problema: a noi serve la chiusura, teorema ("quindi: sottovarietà visibile con chiusura compatta o localmente connessa"), domanda aperta finale.
 Ultime slide: "Grazie per l'attenzione!", poi metti sulla bibliografia così chi vuole se la guarda.
