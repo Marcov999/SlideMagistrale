@@ -3,10 +3,10 @@ Screenplay (sort of)
 Frase iniziale: "Buongiorno (o salve, se sarà nel pomeriggio) a tutti! L'obiettivo di questa presentazione è dimostrare una generalizzazione del teorema di Wolff-Denjoy per sottovarietà di varietà complesse astratte che soddisfano opportune ipotesi."
 Slide 1: racconta il teorema di Wolff-Denjoy e il teorema di Abate (generalizzazione in più variabili). Di' che noi useremo delle ipotesi più generali della Gromov-iperbolicità, sempre soddisfatte dai domini limitati e strettamente pseudoconvessi.
 Slide 2: racconta le def che dai qui.
-Slide 3: quando definisci le simil-geodetiche: di' a voce rispetto a quale distanza sono assolutamente continue; poi: racconta la condizione di visibilità (ci sono i disegnini!).
+Slide 3: quando definisci le simil-geodetiche: di' a voce rispetto a quale distanza sono assolutamente continue; poi: racconta la condizione di visibilità (ci sono i disegnini!). Per la condizione 1, di' che è sempre verificata dalle varietà Kobayashi-iperboliche per lambda=1.
 Slide 4: definisci taut (di' che esistono diversi esempi di varietà taut) e racconta l'enunciato del teorema. Specifica che non è proprio preso dalle cit, ma che è stato dimostrato combinando i risultati di entrambi i preprint.
 Slide 5: spiega qual è la strada per dimostrare il teorema di tipo ``Wolff-Denjoy'' (dovresti conoscere abbastanza bene la dimostrazione da ricordarti i dettagli importanti da sottolineare; racconta anche come si è arrivata a questa generalità).
 Slide 6: il teorema di Abate. Osserva che a noi interessa l'equivalenza tra il punto 1 e il punto 4. L'esempio (spiega perché la funzione è un controesempio).
 Slide 7: lemma per lemma, spiega cosa ci sta dicendo l'enunciato e, dove serve, chiarisci le vaghe dimostrazioni scritte.
-Slide 8: esempio, Alexandroff non basta, servono le fini; def ("sono i modi sensatamente diversi di andare a infinito") e prop; problema: a noi serve la chiusura, teorema ("quindi: sottovarietà visibile con chiusura compatta o localmente connessa"), domanda aperta finale.
+Slide 8: esempio, Alexandroff non basta, servono le fini; def ("sono i modi sensatamente diversi di andare a infinito") con esempio (striscia per far capire, albero infinito per dire che possono essercene tante; usa la lavagna) e prop; problema: a noi serve la chiusura, teorema ("quindi: sottovarietà visibile con chiusura compatta o localmente connessa"), domanda aperta finale.
 Ultime slide: "Grazie per l'attenzione!", poi metti sulla bibliografia così chi vuole se la guarda.

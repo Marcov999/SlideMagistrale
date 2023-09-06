@@ -1,6 +1,6 @@
 \begin{frame}
   \frametitle{Il teorema di Wolff-Denjoy}
-  Sia $\mathbb{D}$ il disco unitario in $\mathbb{C}$.\pause
+  \only<1-5>{Sia $\mathbb{D}$ il disco unitario in $\mathbb{C}$.\pause
   \begin{block}{Teorema (Wolff-Denjoy, 1926)}
     \begin{itshape}
       Sia $f:\mathbb{D} \longrightarrow \mathbb{D}$ una funzione olomorfa. \pause Allora vale esattamente una delle seguenti affermazioni:\pause
@@ -9,7 +9,13 @@
         \item esiste un unico punto del bordo del disco tale che la successione delle iterate di $f$ converge, uniformemente sui compatti, a quel punto.
       \end{itemize}
     \end{itshape}
-  \end{block}
+  \end{block}}
+  \only<6->{
+    - Abate, 1991: generalizzazione in più variabili al caso di domini limitati, strettamente pseudoconvessi e taut.\\ \setcounter{beamerpauses}{6}\pause
+    Cosa cambia: non più un punto fisso, ma orbite relativamente compatte. In questo caso, la dinamica è nota;\\ \pause
+    - Abate, Heinzner, 1992: esistono esempi con orbite relativamente compatte, ma senza punti fissi; \\ \pause
+    - Balogh, Bonk, 2000: i domini limitati e strettamente pseudoconvessi, dotati di un'opportuna distanza, sono Gromov-iperbolici.
+  }
 \end{frame}
 
 \begin{frame}[t]
@@ -56,6 +62,9 @@
           \item ogni due punti distinti di $X$ possono essere collegati da una $(\lambda,\kappa)$-simil-geodetica;\pause
           \item per ogni coppia di punti $p,q\in\partial_YX$ con $p\not=q$, esistono in $\overline{X}$ due intorni $V$ e $W$, di $p$ e $q$ rispettivamente, con chiusura disgiunta, e un compatto $K$ di $X$ tali che  ogni $(\lambda,\kappa)$-simil-geodetica in $X$ che collega un punto di $V$ a un punto di $W$ interseca $K$.
       \end{enumerate}
+      \begin{center}
+        \includegraphics[width=0.60\textwidth, trim=0 17.5cm 0 5cm]{vis.png}
+      \end{center}
   \end{defn}
   }
   \only<13-17>{
